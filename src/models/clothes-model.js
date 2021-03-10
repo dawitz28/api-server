@@ -6,8 +6,7 @@ const mongoose = require('mongoose');
 //create a new mongoose schema (blueprint) with a set of properties and constraints 
 const clothesSchema = mongoose.Schema({
     name: {type: String, required: true},
-    calories: {type: Number, required: true},
-    type: {type: String, uppercase: true, enum: ['DESSERT', 'PROD', 'MEAT']}
+    type: {type: String, uppercase: true, enum: ['JACKET', 'PANTS', 'SOCKS']}
 }); 
 
 const Clothes = mongoose.model('cloth', clothesSchema);
